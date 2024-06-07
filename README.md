@@ -1,73 +1,37 @@
-### Business Understanding
+# SYRIATEL TELCOM CHURN RATE ANALYSIS
+![depositphotos_10011130-stock-photo-satellite-dish](https://github.com/Iankip8/Phase_3_project/assets/160301660/b3b68f3d-e600-44eb-a9ad-f40412a10ddc)
 
-#### Project Overview
 
-In the highly competitive telecommunications market, Syriatel faces the critical challenge of retaining its customer base while ensuring high levels of satisfaction. The company struggles with identifying at-risk customers who might churn and addressing their issues proactively. This problem is compounded by the need to offer personalized services and maintain optimal network performance, all while adapting to ever-evolving customer needs and preferences. Without effective data analytics and machine learning techniques, Syriatel risks losing market share and falling behind competitors who are more adept at leveraging these technologies to enhance customer experiences and loyalty.
+**Project Overview:**
+Syriatel Telecom aims to understand and mitigate customer churn, utilizing binary classification models to predict attrition. The primary objective is to identify influential factors and minimize financial losses associated with customer defection.
 
-#### Introduction
+**Problem Statement:**
+SyriaTel seeks to maintain or increase its customer retention rate by developing an accurate binary classification model. The model should predict the likelihood of customers discontinuing their services and pinpoint factors to address in order to reduce attrition.
 
-Syriatel (Arabic: سيريتل) is a prominent mobile network provider in Syria. Alongside MTN Syria, it has been a key player in the country's telecommunications landscape. In 2022, the Syrian telecommunications authority awarded a third telecom license to Wafa Telecom, introducing new competition into the market. Syriatel offers LTE services with speeds up to 150 Mb/s under the brand name Super Surf. In this increasingly competitive environment, it is imperative for Syriatel to continuously adapt and enhance its services to remain competitive and provide outstanding customer experiences.
+**Data Science Process Used:**
+Adhering to the CRISP-DM Process, the project involves:
 
-#### Stakeholders
+1. **Business Understanding:** Telecoms prioritize subscriber acquisition and retention. Addressing customer churn is crucial in the competitive telecom sector, such as Syriatel. Accurate prediction of churn factors enables proactive identification of at-risk customers and formulation of personalized retention strategies, ultimately reducing revenue losses and enhancing customer satisfaction.
 
-The success of the project is intrinsically tied to the satisfaction of a diverse set of stakeholders:
-- **Syriatel Executives:** Leadership needs to maintain and expand their customer base, ensuring the long-term growth and sustainability of the company.
-- **Syriatel Marketing Team:** The marketing department aims to increase customer acquisition, engagement, and the delivery of targeted promotions.
-- **Syriatel Customer Support Team:** The customer support team seeks to provide efficient and effective customer service, resolving issues, and improving overall customer satisfaction.
-- **Syriatel Customers:** The end-users, who expect reliable, affordable, and innovative telecommunications services.
+2. **Data Understanding:** The SyriaTel Dataset from [Kaggle](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset)., encompassing information on approximately 3,333 customers, was utilized. It includes details like customer location, tenure, plan usage, and customer service interactions.
 
-#### Business Problem
+3. **Exploratory Data Analysis:** During the Exploratory Data Analysis (EDA) phase, we delve into the dataset to uncover its fundamental attributes and patterns. This process involves examining summary statistics, visualizing distributions, identifying correlations, and detecting outliers. EDA serves as a crucial preliminary step, offering insights that inform subsequent data preprocessing and modeling decisions.
+The visualization below illustrates the distribution of customers across the top 5 states and the bottom 5 states. This analysis offers insights into the geographic concentration of customers and highlights regions with potentially lower customer engagement.
+![Capture](https://github.com/Iankip8/Phase_3_project/assets/160301660/c884d42d-14e7-4df5-9d5f-0585f732151c)
+![bottom5](https://github.com/Iankip8/Phase_3_project/assets/160301660/5bc27992-2176-426a-946c-3dfad48d68fa)
 
-This project primarily focuses on addressing customer churn and improving customer satisfaction for Syriatel. We will leverage data analytics and machine learning techniques to gain insights into customer behavior, preferences, and needs. Recommendations and strategies will be developed to mitigate customer churn and improve customer experiences.
+The analysis of churn rate by area code, voice mail plan, and international plan reveals variations in churn across different factors. This examination aided in identifying the factors influencing customer attrition. Through this process, we gained valuable insights into the dynamics impacting customer retention and formulated strategies to address churn effectively.
 
-Customer churn (the loss of customers to competition) presents a significant challenge for telecom companies like Syriatel because it is more expensive to acquire a new customer than to retain an existing one. Most telecom companies suffer from voluntary churn, which has a strong impact on the lifetime value of a customer by affecting both the length of service and future revenue. For instance, a company with a 25% churn rate has an average customer lifetime of four years, while a company with a 50% churn rate has an average customer lifetime of only two years. It is estimated that 75 percent of the 17 to 20 million subscribers signing up with a new wireless carrier every year are coming from another wireless provider, indicating a high rate of churn. Telecom companies invest substantial resources to acquire new customers, and when a customer leaves, the company not only loses future revenue but also the resources spent on acquisition. This erosion of profitability underscores the importance of mitigating churn.
+![churn](https://github.com/Iankip8/Phase_3_project/assets/160301660/7903bfbf-1b1b-4983-9687-9df2470f40b7)
 
-By implementing advanced data analytics and machine learning techniques, Syriatel can develop effective strategies to identify at-risk customers, understand their reasons for potential departure, and deploy targeted interventions to retain them. These efforts will not only reduce churn but also enhance overall customer satisfaction and loyalty, thereby contributing to Syriatel’s long-term success and competitive edge.
+5. **Data Preparation:** Data underwent transformation, cleaning, and preprocessing, involving tasks such as data type conversion, handling multicollinearity, and data splitting.
 
-### Objective
+6. **Modeling:** Four models—Decision trees, Random forests, Logistic regression, and Gradient Boost Classifier—were fitted to predict customer churn. The Gradient Boost Classifier emerged as the best-performing model with a Training Accuracy of 97.39% and a Validation accuracy of 93.55%.
 
-The aim of this analysis is to leverage data analytics and machine learning techniques to address the challenge of customer churn and improve customer satisfaction for Syriatel, a leading mobile network provider in Syria.
+![roc_auc](https://github.com/Iankip8/Phase_3_project/assets/160301660/827dfaac-4de5-46d7-840f-dc11e9277504)
 
-### Business Questions
 
-The key objectives for this project include:
-1. **Identifying At-Risk Customers:**
-   - Develop predictive models to identify customers at risk of churning based on their behavior and interaction patterns.
-   - Implement proactive interventions to retain at-risk customers and reduce churn rates.
+**Model Evaluation:**
+Evaluation of model performance includes metrics like accuracy, precision, recall, F1-score, and ROC-AUC, ensuring alignment with business requirements and goals of Syriatel Telecom.
 
-2. **Understanding Customer Preferences:**
-   - Analyze customer data to gain insights into preferences, needs, and satisfaction levels.
-   - Tailor services and offerings to better meet customer expectations and enhance satisfaction.
-
-3. **Recommendation of Retention Strategies:**
-   - Develop targeted retention strategies, such as personalized promotions and loyalty programs, to mitigate churn.
-   - Implement proactive customer support initiatives to address potential reasons for churn.
-
-4. **Enhancing Customer Experience:**
-   - Assess and optimize existing customer support processes and services to improve overall customer experience.
-   - Identify areas for improvement and implement measures to enhance satisfaction levels.
-
-### Data Understanding
-
-#### Features
-
-- **State (Categorical):** The state in which the customer resides.
-- **Account Length (Numerical):** The number of days the customer has been with the company.
-- **Area Code (Categorical):** The area code associated with the customer's phone number.
-- **Phone Number (Categorical):** The customer's phone number, typically treated as an identifier.
-- **International Plan (Categorical):** Whether the customer has an international calling plan (e.g., "yes" or "no").
-- **Voice Mail Plan (Categorical):** Whether the customer has a voicemail plan (e.g., "yes" or "no").
-- **Number of Voicemail Messages (Numerical - discrete):** The number of voicemail messages received by the customer.
-- **Total Day Minutes (Numerical):** The total number of minutes the customer used during the daytime.
-- **Total Day Calls (Numerical - discrete):** The total number of calls made by the customer during the daytime.
-- **Total Day Charge (Numerical):** The total charges incurred for daytime usage.
-- **Total Evening Minutes (Numerical):** The total number of minutes the customer used in the evening.
-- **Total Evening Calls ( Numerical - discrete):** The total number of calls made by the customer in the evening.
-- **Total Evening Charge (Numerical):** The total charges incurred for evening usage.
-- **Total Night Minutes (Numerical):** The total number of minutes the customer used at night.
-- **Total Night Calls (Numerical - discrete):** The total number of calls made by the customer at night.
-- **Total Night Charge (Numerical):** The total charges incurred for nighttime usage.
-- **Total International Minutes (Numerical):** The total number of international minutes used by the customer.
-- **Total International Calls (Numerical - discrete):** The total number of international calls made by the customer.
-- **Total International Charge (Numerical - discrete):** The total charges incurred for international calls.
-- **
+![validation](https://github.com/Iankip8/Phase_3_project/assets/160301660/078093b1-f70b-4850-8a91-8c125e00a2d0)
