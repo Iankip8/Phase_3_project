@@ -40,5 +40,20 @@ Additionally, the key features shown to influence whether a customer would churn
 
 ![key_features](https://github.com/Iankip8/Phase_3_project/assets/160301660/7d7afb45-e68b-4e15-9fdb-854689bdbe04)
 
+### Results and Conclusion
+### Results
+
+Our predictive modeling approach effectively addresses the challenge of customer churn for Syriatel. Using advanced data analytics and machine learning techniques, we developed models that accurately identify customers at risk of churning. The XGBoost model demonstrated superior performance, achieving the highest accuracy score.
+
+Key insights from the analysis include:
+
+- **Churn Rate by Area Code, Voice Mail Plan, and International Plan**: Significant variations in churn rates were observed across different area codes, voice mail plans, and international plans, highlighting factors affecting customer churn.
+- **Customer Service Interactions and Service Plan Features**: Customer service interactions and specific service plan features emerged as critical factors influencing churn.
+
+### Conclusion
+
+This project provided a robust predictive model and critical insights into customer behavior and preferences. Understanding the key factors influencing churn allows Syriatel to tailor strategies to meet customer needs more effectively. Continuous updates and refinements ensure the model remains accurate in predicting customer churn as market conditions and customer behaviors evolve.
+
+Implementing these models and recommendations will enhance Syriatel's customer retention efforts, reduce churn rates, and improve overall business performance. Proactively identifying at-risk customers enables timely and targeted interventions, crucial for maintaining a satisfied and loyal customer base. Focusing on customer service improvements and personalized promotions will significantly boost customer satisfaction and loyalty.
 
 
