@@ -6,7 +6,7 @@
 Syriatel Telecom aims to understand and mitigate customer churn, utilizing binary classification models to predict attrition. The primary objective is to identify influential factors and minimize financial losses associated with customer defection.
 
 **Problem Statement:**
-SyriaTel seeks to maintain or increase its customer retention rate by developing an accurate binary classification model. The model should predict the likelihood of customers discontinuing their services and pinpoint factors to address in order to reduce attrition.
+SyriaTel seeks to maintain or increase its customer retention rate by developing an accurate binary classification model. The model should predict the likelihood of customers discontinuing their services and pinpoint factors to address to reduce attrition.
 
 **Data Science Process Used:**
 Adhering to the CRISP-DM Process, the project involves:
@@ -15,12 +15,12 @@ Adhering to the CRISP-DM Process, the project involves:
 
 2. **Data Understanding:** The SyriaTel Dataset from [Kaggle](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset)., encompassing information on approximately 3,333 customers, was utilized. It includes details like customer location, tenure, plan usage, and customer service interactions.
 
-3. **Exploratory Data Analysis:** During the Exploratory Data Analysis (EDA) phase, we delve into the dataset to uncover its fundamental attributes and patterns. This process involves examining summary statistics, visualizing distributions, identifying correlations, and detecting outliers. EDA serves as a crucial preliminary step, offering insights that inform subsequent data preprocessing and modeling decisions.
+3. **Exploratory Data Analysis:** During the Exploratory Data Analysis (EDA) phase, we delve into the dataset to uncover its fundamental attributes and patterns. This process involves examining summary statistics, visualizing distributions, identifying correlations, and detecting outliers. EDA is a crucial preliminary step, offering insights that inform subsequent data preprocessing and modeling decisions.
 The visualization below illustrates the distribution of customers across the top 5 states and the bottom 5 states. This analysis offers insights into the geographic concentration of customers and highlights regions with potentially lower customer engagement.
 ![Capture](https://github.com/Iankip8/Phase_3_project/assets/160301660/c884d42d-14e7-4df5-9d5f-0585f732151c)
 ![bottom5](https://github.com/Iankip8/Phase_3_project/assets/160301660/5bc27992-2176-426a-946c-3dfad48d68fa)
 
-The analysis of churn rate by area code, voice mail plan, and international plan reveals variations in churn across different factors. This examination aided in identifying the factors influencing customer attrition. Through this process, we gained valuable insights into the dynamics impacting customer retention and formulated strategies to address churn effectively.
+The churn rate analysis by area code, voice mail plan, and international plan reveals variations in churn across different factors. This examination aided in identifying the factors influencing customer attrition. Through this process, we gained valuable insights into customer retention dynamics and formulated strategies to address churn effectively.
 
 ![churn](https://github.com/Iankip8/Phase_3_project/assets/160301660/7903bfbf-1b1b-4983-9687-9df2470f40b7)
 
@@ -32,6 +32,13 @@ The analysis of churn rate by area code, voice mail plan, and international plan
 
 
 **Model Evaluation:**
-Evaluation of model performance includes metrics like accuracy, precision, recall, F1-score, and ROC-AUC, ensuring alignment with business requirements and goals of Syriatel Telecom.
+Model performance evaluation includes metrics like accuracy, precision, recall, F1-score, and ROC-AUC, ensuring alignment with the business requirements and goals of Syriatel Telecom.
 
 ![validation](https://github.com/Iankip8/Phase_3_project/assets/160301660/078093b1-f70b-4850-8a91-8c125e00a2d0)
+
+Additionally, the key features shown to influence whether a customer would churn can be seen in the bar plot displayed below. We note that  international plan is a key variable in predicting future events.
+
+![key_features](https://github.com/Iankip8/Phase_3_project/assets/160301660/7d7afb45-e68b-4e15-9fdb-854689bdbe04)
+
+
+
